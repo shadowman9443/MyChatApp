@@ -1,8 +1,9 @@
-package com.example.aunogarafat.mychatapp
+package com.example.aunogarafat.mychatapp.activities
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.aunogarafat.mychatapp.R
 
 class DashboardActivity : AppCompatActivity() {
 

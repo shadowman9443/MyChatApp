@@ -1,8 +1,9 @@
-package com.example.aunogarafat.mychatapp
+package com.example.aunogarafat.mychatapp.activities
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.aunogarafat.mychatapp.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_main.*
@@ -22,15 +23,15 @@ class MainActivity : AppCompatActivity() {
             firebaseAuth: FirebaseAuth ->
             user=firebaseAuth.currentUser
             if(user!=null){
-                startActivity(Intent(this,DashboardActivity::class.java))
+                startActivity(Intent(this, DashboardActivity::class.java))
             }
         }
         btnLogin.setOnClickListener {
-            startActivity(Intent(this,LoginActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
         }
 
         btnCreateacnt.setOnClickListener {
-          startActivity(Intent(this,CreateAccountActivity::class.java))
+          startActivity(Intent(this, CreateAccountActivity::class.java))
         }
 
     }

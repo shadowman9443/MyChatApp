@@ -1,10 +1,11 @@
-package com.example.aunogarafat.mychatapp
+package com.example.aunogarafat.mychatapp.activities
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Toast
+import com.example.aunogarafat.mychatapp.R
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
@@ -59,7 +60,7 @@ class CreateAccountActivity : AppCompatActivity() {
                                             if(task.isSuccessful) {
                                                 Toast.makeText(this,"User Created Successfully",Toast.LENGTH_LONG).show()
 
-                                                var dashBoardIntent=Intent(this,DashboardActivity::class.java)
+                                                var dashBoardIntent=Intent(this, DashboardActivity::class.java)
                                                     dashBoardIntent.putExtra("name",displayName)
                                                 startActivity(dashBoardIntent)
                                                 finish()
