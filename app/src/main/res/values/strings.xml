@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyChatApp</string>
+    <string name="wel_text">Welcome to my chat apps</string>
+    <string name="login_btn_txt">Already Account?</string>
+    <string name="account_btn_txt">Need Account?</string>
+    <string name="create_act">Create a New Account</string>
+</resources>
